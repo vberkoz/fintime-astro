@@ -1,210 +1,186 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 ---
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
-			</section>
-		</section>
-	</main>
-
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
+<div class="flex min-h-screen flex-col">
+    <header class="border-b border-gray-100">
+        <div class="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span class="text-xl font-semibold">FinTime</span>
+            </div>
+            <nav class="hidden md:flex gap-6">
+                <a href="#features" class="text-sm font-medium text-gray-600 hover:text-gray-900">
+                    Features
+                </a>
+                <a href="#technology" class="text-sm font-medium text-gray-600 hover:text-gray-900">
+                    Technology
+                </a>
+            </nav>
+            <a href="https://app.fintime.vberkoz.com/" class="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
+                Open App
+            </a>
+        </div>
+    </header>
+    <main class="flex-1">
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                            FinTime
+                        </h1>
+                        <p class="text-gray-500 md:text-xl">
+                            Modern financial time-tracking for structured daily
+                            insights
+                        </p>
+                    </div>
+                    <p class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                        Log activities with durations, categorize tasks, view
+                        monthly summaries, and use across all devices. Take
+                        control of your time and finances with our intuitive
+                        tracking solution.
+                    </p>
+                    <a href="https://app.fintime.vberkoz.com/" class="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950">
+                        Open App
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="w-full bg-gray-50 py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+                            Key Features
+                        </h2>
+                        <p class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                            Everything you need to track your time and finances
+                            efficiently.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">
+                            Log Start & End Times
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            Easily record when you start and finish tasks for
+                            accurate time tracking.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-6 w-6"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">
+                            Auto Duration Calculation
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            Let the app automatically calculate how long you've
+                            spent on each task.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Monthly Summaries</h3>
+                        <p class="text-sm text-gray-500">
+                            Get comprehensive monthly reports to understand your
+                            time allocation.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+                    >
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M9 19h6"></path><path d="M9 15v-3H5l7-7 7 7h-4v3H9z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">
+                            Task Categorization
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            Organize your activities into categories for better
+                            financial insights.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">
+                            Personalized Profiles
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            Create custom profiles tailored to your specific
+                            tracking needs.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start space-y-2 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+                        <div class="rounded-full bg-gray-900/5 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                                <rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold">Responsive UI</h3>
+                        <p class="text-sm text-gray-500">
+                            Access your time tracking data from any device with
+                            our responsive interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technology" class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+                            Technology Stack
+                        </h2>
+                        <p class="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                            Built with modern technologies for optimal
+                            performance.
+                        </p>
+                    </div>
+                    <div class="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-4">
+                        <div class="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium">
+                            React 19
+                        </div>
+                        <div class="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium">
+                            Vite
+                        </div>
+                        <div class="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium">
+                            Tailwind
+                        </div>
+                        <div class="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium">
+                            AWS Lambda
+                        </div>
+                        <div class="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium">
+                            DynamoDB
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-gray-100 py-6">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-6">
+                <p class="text-center text-sm text-gray-500">
+                    © 2025 FinTime. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 </div>
-
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
-
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
-
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
-
-	#links {
-		display: flex;
-		gap: 16px;
-	}
-
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
-
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
-
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
-
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
-
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
-
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
-
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
-
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
-	}
-
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
-
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
-
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
-
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
-
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
-
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
-
-		#links {
-			flex-wrap: wrap;
-		}
-
-		#links a.button {
-			padding: 14px 18px;
-		}
-
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
-
-		h1 {
-			line-height: 1.5;
-		}
-	}
-</style>
