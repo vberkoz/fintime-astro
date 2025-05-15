@@ -1,7 +1,7 @@
         
 # FinTime - Modern Financial Time-Tracking
 
-![FinTime Logo](https://github.com/yourusername/fintime-astro/raw/main/public/favicon.svg)
+![FinTime Logo](https://fintime.vberkoz.com/favicon.svg)
 
 FinTime is a modern web application for financial time-tracking that provides structured daily insights. It helps users log activities with durations, categorize tasks, view monthly summaries, and access their data across all devices.
 
