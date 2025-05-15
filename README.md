@@ -1,34 +1,32 @@
-# Astro Starter Kit: Basics
+        
+# FinTime - Modern Financial Time-Tracking
 
-```sh
-npm create astro@latest -- --template basics
-```
+![FinTime Logo](https://github.com/yourusername/fintime-astro/raw/main/public/favicon.svg)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+FinTime is a modern web application for financial time-tracking that provides structured daily insights. It helps users log activities with durations, categorize tasks, view monthly summaries, and access their data across all devices.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Features
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- **Log Start & End Times**: Easily record when you start and finish tasks for accurate time tracking
+- **Auto Duration Calculation**: Let the app automatically calculate how long you've spent on each task
+- **Monthly Summaries**: Get comprehensive monthly reports to understand your time allocation
+- **Task Categorization**: Organize your activities into categories for better financial insights
+- **Personalized Profiles**: Create custom profiles tailored to your specific tracking needs
+- **Responsive UI**: Access your time tracking data from any device with our responsive interface
 
-## 🚀 Project Structure
+## 💻 Technology Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+FinTime is built with modern technologies for optimal performance:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- React 19
+- Vite
+- Tailwind CSS
+- AWS Lambda
+- DynamoDB
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🔗 Live Demo
+
+You can access the live application at: [https://app.fintime.vberkoz.com/](https://app.fintime.vberkoz.com/)
 
 ## 🧞 Commands
 
@@ -43,6 +41,26 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🧑‍💻 Development
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is built with [Astro](https://astro.build/), a modern static site builder. The project structure follows Astro conventions:
+
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Welcome.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css
+└── package.json
+```
+
+## 📝 License
+
+© 2025 FinTime. All rights reserved.
